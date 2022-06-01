@@ -1,0 +1,25 @@
+body{
+    background-image: url("../images/demo.jpeg.jpg");
+    background-color: white;
+    background-size: cover;
+}
+h1{
+    color: red;
+}
+p{
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: justify; /* left right center*/
+    text-transform: capitalize;/* uppercase lowercase none*/
+    text-decoration: underline;/* line-through overline none*/
+    text-indent:10px ;
+    font-weight: 400;
+    font-family: "Times New Roman";
+
+    /*text-shadow: 0 0 5px red;*/
+    width:1000px;
+}
+a:hover{
+    color: red;
+}

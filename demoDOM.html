@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo DOM</title>
+</head>
+<body>
+    <h1 id="heading1">MU tính đổi Maguire - Rashford lấy De Jong, Barca "chê" vì thích 2 SAO khác</h1>
+    <p id="paragraph1">
+        Mùa hè 2022, MU đang ấp ủ thực hiện cuộc cải tổ lực lượng mạnh mẽ dưới thời
+        tân HLV trưởng Erik Ten Hag. Nhà cầm quân 52 tuổi cực kì yêu thích De Jong
+        và coi anh là viên gạch quan trọng cho quá hình phục hưng "Quỷ đỏ". Trong quãng thời gian làm việc chung ở Ajax (2017-2019), ông cũng góp phần nâng tầm cậu trò cưng trở thành tiền vệ trung tâm hàng đầu châu Âu.
+    </p>
+    <ul id="list"></ul>
+    <button type="button" onclick="showlist()">Show list</button>
+    <h1>
+        <span id="min">10</span>:<span id="sec">00</span>
+    </h1>
+    <button type="button" onclick="timer()">star timer</button>
+    <script type="text/javascript">
+        var time={
+            min:10,
+            sec:0
+        }
+        function timer(){
+           var tm= setInterval(function (){
+                var minSpan=document.getElementById("min");
+                var secSpan=document.getElementById("sec");
+                minSpan.innerTextt=time.min;
+                secSpan.innerText=time.sec;
+                time.sec--;
+                if(time.sec<0){
+                    time.sec=59;
+                    time.min--;
+                }
+                if(time.min<0){
+                    clearInterval(tm);
+                }
+            },1000);
+        }
+        var h1obj= document.getElementById("heading1");
+        //
+        // setTimeout(function () {
+        //     // chuyen h1 thanh mau đỏ
+        //     h1obj.style.color="red";
+        // },10000);
+        h1obj.innerText="xin chào các bạn";
+        h1obj.innerHTML="<i>Hello word!</i>";
+        function showlist(){
+            var student=[
+                {
+                    name:"nguyễn văn a",
+                    age:18
+                },
+                {
+                    name:"nguyễn văn b",
+                    age:19
+                },
+            ];
+            var ulObj=document.getElementById("list");
+            for(var i=0;i<student.length;i++){
+                var xyz="<li>Name: "+ student[i].name+ "</li>";
+                ulObj.innerHTML=xyz;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.sidebar{
+
+}
+.box-animation{
+    background-color: red;
+    float: left;
+    width: 150px;
+    height: 50px;
+    transition: all 300ms;/* thời gian thay đổi hiển thị*/
+
+    animation: moveBox;
+    animation-duration: 1s;
+}
+.box-animation:hover{
+    background-color: #097a41;
+
+    /*transform: translateX(-100px);*/
+    /*transform: translateY(20px);*/
+    /*transform: translate(100px,50px);*/
+    transform: scale(1.5);      /* phóng to*/
+    transform: rotate(45deg);           /*xoay bn độ*/
+
+}
+
+@keyframes moveBox {
+    /*from{*/
+    /*    transform: translateX(0);*/
+    /*}*/
+    /*to{*/
+    /*    transform: translateX(200px);*/
+    /*}*/
+    0%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(200px,0);
+    }
+    50% {
+        transform: translate(200px, 200px);
+    }
+    75%{
+        transform: translate(0, 200px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.footer i{
+    font-size: 30px;
+    color: black;
+}
+.footer i:hover{
+    color: #097a41;
+}

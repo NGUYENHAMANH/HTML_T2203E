@@ -1,0 +1,41 @@
+*{
+
+}
+.container_form{
+    float: left;
+    margin: 20px;
+}
+.tren{
+    background-color: #fafafa;
+    height: 200px;
+
+}
+.duoi{
+    height:700px;
+    background-color: #fafafa;
+    margin-top: 40px;
+
+}
+.duoi_header{
+    padding: 10px;
+}
+.container4{
+    padding-top: 20px;
+}
+.floatL {
+    float: left;
+    width: 23%;
+    padding: 10px;
+}
+.floatL i{
+    color: #4688f1;
+}
+.floatL p a{
+    text-decoration: none;
+    color: #606060;
+    font-size: 13px;
+}
+
+
+
+
